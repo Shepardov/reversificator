@@ -39,5 +39,5 @@ function reverseWord(word) {
     let secondHalf = word.slice(divideCount, word.length);
     let firstReversedWord = firstHalf + firstHalf.split('').reverse().join('').slice(1);
     let secondReversedWord = secondHalf.split('').reverse().join('') + secondHalf.slice(1);
-    result.innerHTML += `${firstReversedWord} или ${secondReversedWord} `;
+    result.innerHTML += `${firstReversedWord} ${secondReversedWord} `;
 }
