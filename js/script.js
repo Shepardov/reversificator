@@ -6,6 +6,11 @@ let result = document.getElementById('result');
 
 phrase.addEventListener('input', () => {
     phraseToDivide.innerText = phrase.value;
+    let words = phraseToDivide.innerText.split(' ');
+    result.innerText = "";
+    words.forEach(word => {
+        reverseWord(word);
+    });
 });
 
 phraseToDivide.addEventListener('mouseover', () => {
